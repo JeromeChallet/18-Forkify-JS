@@ -11,3 +11,4 @@ const timeout = function (s) {
 // https://forkify-api.herokuapp.com/v2
 
 ///////////////////////////////////////
+// to install parcel npm i parcel@next -D
