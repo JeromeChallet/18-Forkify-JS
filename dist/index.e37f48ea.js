@@ -585,8 +585,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"aenu9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _webImmediateJs = require("core-js/modules/web.immediate.js"); // window.addEventListener('hashchange', showRecipe);
- // window.addEventListener('load', showRecipe);
+var _webImmediateJs = require("core-js/modules/web.immediate.js");
 var _iconsSvg = require("../img/icons.svg");
 var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 var _runtime = require("regenerator-runtime/runtime");
@@ -612,13 +611,10 @@ const renderSpinner = function(parentEl) {
 };
 const showRecipe = async function() {
     try {
-        const id = window.location.hash.slice(1);
-        console.log(id);
-        if (!id) return;
         // 1 loading recipe
         renderSpinner(recipeContainer);
         const res = await fetch(//  791ca3cc-8af7-4385-a93b-20573fd98421
-        `https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886/${id}`);
+        "https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886");
         const data = await res.json();
         if (!res.ok) throw new Error(`${data.message} (${res.status})`);
         let { recipe } = data.data;
@@ -724,10 +720,7 @@ const showRecipe = async function() {
         alert(err);
     }
 };
-[
-    "haschange",
-    "load"
-].forEach((ev)=>window.addEventListener(ev, showRecipe));
+showRecipe();
 
 },{"core-js/modules/web.immediate.js":"49tUX","../img/icons.svg":"cMpiy","regenerator-runtime/runtime":"dXNgZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"49tUX":[function(require,module,exports) {
 "use strict";
