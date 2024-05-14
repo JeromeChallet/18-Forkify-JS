@@ -29,7 +29,7 @@
 90C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\css-select\lib\index.js121436361000000000 0
 73C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\base-x133600347397611804 1
 97C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\core-js\features\map\update.js121436361000000000 0
-58C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\dist133601211149681498 1
+58C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\dist133601213172916557 1
 104C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\core-js\actual\dom-exception\index.js121436361000000000 0
 82C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\forkify-flowchart-part-1.png133576999674674309 0
 108C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\caniuse-lite\data\features\flexbox-gap.js121436361000000000 0
@@ -43,7 +43,7 @@
 98C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\entities\lib\maps\entities.json121436361000000000 0
 111C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\core-js\internals\v8-prototype-define-bug.js121436361000000000 0
 93C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\@parcel\workers\lib\bus.js121436361000000000 0
-64C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\.gitignore133601209265112849 0
+64C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\.gitignore133601211867131249 0
 95C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\core-js\actual\math\clz32.js121436361000000000 0
 82C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\posthtml-render133600347397669400 1
 100C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\@parcel\runtime-react-refresh\lib133600347229002908 1
@@ -122,7 +122,7 @@
 66C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\package.json133600380269779918 0
 117C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\htmlnano\lib\modules\removeRedundantAttributes.cjs121436361000000000 0
 99C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\core-js\modules\es.array.find.js121436361000000000 0
-60C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\src\js133601209265535843 1
+60C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\src\js133601211867510535 1
 80C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\parent-module133600347398002855 1
 101C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\core-js\full\array\virtual\some.js121436361000000000 0
 102C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\node_modules\csso\lib\replace\property\border.js121436361000000000 0
@@ -8323,6 +8323,6 @@
 81C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\dist\index.f7626f62.css.map133600375024221215 0
 85C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\dist\logo.726d37a8.png.24888.4e133600339838698132 0
 76C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\dist\logo.833dfef5.png133600339838698132 0
-74C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\src\js\controller.js133601209265535843 0
-76C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\dist\index.e37f48ea.js133601211149641383 0
-80C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\dist\index.e37f48ea.js.map133601211149681498 0
+74C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\src\js\controller.js133601213227912573 0
+76C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\dist\index.e37f48ea.js133601213172437580 0
+80C:\Users\JeromeChallet\Documents\jerome\18-Forkify-JS\dist\index.e37f48ea.js.map133601213172557194 0

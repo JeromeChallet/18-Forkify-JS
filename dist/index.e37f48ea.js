@@ -611,6 +611,9 @@ const renderSpinner = function(parentEl) {
 };
 const showRecipe = async function() {
     try {
+        const id = window.location.hash.slice(1);
+        console.log(id);
+        if (!id) return;
         // 1 loading recipe
         renderSpinner(recipeContainer);
         const res = await fetch(//  791ca3cc-8af7-4385-a93b-20573fd98421
@@ -721,6 +724,10 @@ const showRecipe = async function() {
     }
 };
 showRecipe();
+[
+    "hashchange",
+    "load"
+].forEach((ev)=>window.addEventListener(ev, showRecipe));
 
 },{"core-js/modules/web.immediate.js":"49tUX","../img/icons.svg":"cMpiy","regenerator-runtime/runtime":"dXNgZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"49tUX":[function(require,module,exports) {
 "use strict";
