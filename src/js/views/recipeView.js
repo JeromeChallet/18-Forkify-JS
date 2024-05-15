@@ -110,11 +110,10 @@ class RecipeView {
     </a>
   </div>`;
   }
-}
 
-#generateMarkupIngredient(ing)  {
+  #generateMarkupIngredient(ing) {
     ing => {
-        return `<li class="recipe__ingredient">
+      return `<li class="recipe__ingredient">
         <svg class="recipe__icon">
           <use href="${icons}#icon-check"></use>
         </svg>
@@ -126,7 +125,8 @@ class RecipeView {
           ${ing.description}
         </div>
       </li>`;
-      }
+    };
+  }
 }
 
 // instead of exporting the entire class we export a single instance
