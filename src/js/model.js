@@ -2,13 +2,18 @@ import { async } from 'regenerator-runtime';
 import { API_URL } from './config';
 import { getJSON } from './helpers';
 
-const state = {
+// the state contains all teh data we need to build the app
+export const state = {
   recipe: {},
+  search: {
+    query: '',
+    results: [],
+  },
 };
 
 export const loadRecipe = async function (id) {
   try {
-    const data = await getJSON(`${API_URL}/${id}`);
+    const data = await getJSON(`${API_URL}${id}`);
 
     const { recipe } = data.data;
     state.recipe = {
@@ -23,6 +28,26 @@ export const loadRecipe = async function (id) {
     };
     console.log(recipe);
   } catch (err) {
+    console.error(`${err}`);
+    throw err;
+  }
+};
+export const loadSearchResults = async function (query) {
+  try {
+    state.search.query = query;
+
+    const data = await getJSON(`${API_URL}?search=${query}`);
+    console.log(data);
+    state.search.results = data.data.recipes.map(rec => {
+      return {
+        id: rec.id,
+        title: rec.title,
+        publisher: rec.publisher,
+        image: rec.image_url,
+      };
+    });
+    console.log(state.search.results);
+  } catch {
     console.error(`${err}`);
     throw err;
   }
