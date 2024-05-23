@@ -2,10 +2,12 @@ import * as model from './model.js';
 import recipeView from './views/recipeView.js';
 import searchView from './views/searchView.js';
 import resultsView from './views/resultsView.js';
+import View from './view.js';
 
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import paginationView from './views/paginationView.js';
+import { async } from 'regenerator-runtime';
 
 // if (module.hot) {
 //   module.hot.accept();
@@ -21,6 +23,10 @@ const controlRecipes = async function () {
 
     if (!id) return;
     recipeView.renderSpinner();
+
+    // 0 update results view to mark selected search result
+    resultsView.update(model.getSearchResultsPage());
+
     // 1 loading recipe
     await model.loadRecipe(id);
 
@@ -61,12 +67,14 @@ const controlServings = function (newServings) {
   // update the recipe servings (instate)
   model.updateServings(newServings);
   //update the recipe view
-  recipeView.render(model.state.recipe);
+  // update will rerender the updated element in the DOM without having to rerender the entire view
+  // recipeView.render(model.state.recipe);
+  recipeView.update(model.state.recipe);
 };
 
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
-  recipeView.addHandlerUpdateServings(controlRecipes);
+  recipeView.addHandlerUpdateServings(controlServings);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
 };
